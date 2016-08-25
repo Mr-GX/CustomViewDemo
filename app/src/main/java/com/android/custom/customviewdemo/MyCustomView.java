@@ -10,9 +10,6 @@ import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.view.View;
 
-/**
- * Created by InSight on 2016/7/11.
- */
 public class MyCustomView extends View {
     int custom_color, custom_size;
     boolean custom_anim;
