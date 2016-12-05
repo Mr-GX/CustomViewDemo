@@ -1,2 +1,1 @@
-# MyCustomView
-自定义view练习
+#CustomViewDemo
