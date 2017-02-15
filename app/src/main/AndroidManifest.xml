@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".CustomViewActivity" />
         <activity android:name=".GuideViewActivity" />
+        <activity android:name=".CircleViewActivity"/>
     </application>
 
 </manifest>

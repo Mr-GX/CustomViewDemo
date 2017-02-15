@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, CustomViewActivity.class));
     }
 
+    public void CircleView(View view) {
+        startActivity(new Intent(this, CircleViewActivity.class));
+    }
+
     public void GuideView(View view) {
         startActivity(new Intent(this, GuideViewActivity.class));
     }

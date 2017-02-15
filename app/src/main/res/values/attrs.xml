@@ -5,4 +5,8 @@
         <attr name="size" format="dimension" />
         <attr name="auto_anim" format="boolean" />
     </declare-styleable>
+
+    <declare-styleable name="MyCircleView">
+        <attr name="bg_color" format="color" />
+    </declare-styleable>
 </resources>
