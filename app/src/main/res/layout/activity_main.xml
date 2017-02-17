@@ -27,4 +27,11 @@
         android:layout_gravity="center_horizontal"
         android:onClick="GuideView"
         android:text="欢迎页" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="Alerter"
+        android:text="提醒" />
 </LinearLayout>
