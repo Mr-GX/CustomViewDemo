@@ -5,14 +5,17 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.tapadoo.alerter.Alerter;
 
 public class MainActivity extends AppCompatActivity {
+    LottieAnimationView animationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        animationView = (LottieAnimationView) findViewById(R.id.animation_view);
     }
 
     public void CustomView(View view) {
@@ -36,4 +39,18 @@ public class MainActivity extends AppCompatActivity {
                 .setDuration(1000)
                 .show();
     }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        animationView.setProgress(0f);
+        animationView.playAnimation();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        animationView.cancelAnimation();
+    }
+
 }
