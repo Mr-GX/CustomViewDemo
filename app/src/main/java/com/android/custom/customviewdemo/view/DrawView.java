@@ -1,4 +1,4 @@
-package com.android.custom.customviewdemo;
+package com.android.custom.customviewdemo.view;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -9,32 +9,34 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
+import com.android.custom.customviewdemo.R;
 
-public class DrawCircleView extends View {
+
+public class DrawView extends View {
     Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     Path path = new Path();
 
-    public DrawCircleView(Context context) {
+    public DrawView(Context context) {
         super(context);
     }
 
-    public DrawCircleView(Context context, @Nullable AttributeSet attrs) {
+    public DrawView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public DrawCircleView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public DrawView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
-    public DrawCircleView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public DrawView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawColor(Color.GRAY);
-        paint.setColor(Color.RED);
+        canvas.drawColor(getResources().getColor(R.color.colorBg));
+        paint.setColor(Color.BLUE);
         paint.setStyle(Paint.Style.FILL_AND_STROKE);
         canvas.drawCircle(150, 150, 100, paint);
         canvas.drawRect(150, 300, 300, 450, paint);

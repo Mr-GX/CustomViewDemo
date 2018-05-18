@@ -1,4 +1,4 @@
-package com.android.custom.customviewdemo;
+package com.android.custom.customviewdemo.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.android.custom.customviewdemo.R;
 import com.tapadoo.alerter.Alerter;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,16 +19,12 @@ public class MainActivity extends AppCompatActivity {
         animationView = (LottieAnimationView) findViewById(R.id.animation_view);
     }
 
-    public void CustomView(View view) {
-        startActivity(new Intent(this, CustomViewActivity.class));
-    }
-
-    public void CircleView(View view) {
-        startActivity(new Intent(this, CircleViewActivity.class));
+    public void DrawView(View view) {
+        startActivity(new Intent(this, DrawViewActivity.class));
     }
 
     public void GuideView(View view) {
-        startActivity(new Intent(this, GuideViewActivity.class));
+        startActivity(new Intent(this, GuideActivity.class));
     }
 
     public void Alerter(View view) {

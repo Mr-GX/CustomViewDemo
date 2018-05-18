@@ -1,11 +1,12 @@
-package com.android.custom.customviewdemo;
+package com.android.custom.customviewdemo.activity;
 
 import android.os.Bundle;
 
+import com.android.custom.customviewdemo.R;
 import com.github.paolorotolo.appintro.AppIntro2;
 import com.github.paolorotolo.appintro.AppIntroFragment;
 
-public class GuideViewActivity extends AppIntro2 {
+public class GuideActivity extends AppIntro2 {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
