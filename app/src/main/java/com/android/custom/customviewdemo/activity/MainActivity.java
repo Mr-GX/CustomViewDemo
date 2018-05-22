@@ -27,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, GuideActivity.class));
     }
 
+    public void AnimatorView(View view) {
+        startActivity(new Intent(this, AnimatorActivity.class));
+    }
+
     public void Alerter(View view) {
         Alerter.create(this)
                 .setTitle("Alert Title")
